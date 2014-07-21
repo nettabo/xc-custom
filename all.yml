@@ -44,3 +44,6 @@
   ## text editors
   - role: cask_package
     package_name: atom
+  ## terminal
+  - role: cask_package
+    package_name: iterm2
