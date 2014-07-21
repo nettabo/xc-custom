@@ -44,10 +44,13 @@
   ## text editors
   - role: cask_package
     package_name: atom
-  ## terminal
+  ## terminals
   - role: cask_package
     package_name: iterm2
-  ## keyboard
+  ## keyboards
   - role: cask_package
     package_name: karabiner
+  ## storages
+  - role: cask_package
+    package_name: dropbox
 
