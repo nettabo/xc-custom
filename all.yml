@@ -47,3 +47,7 @@
   ## terminal
   - role: cask_package
     package_name: iterm2
+  ## keyboard
+  - role: cask_package
+    package_name: karabiner
+
