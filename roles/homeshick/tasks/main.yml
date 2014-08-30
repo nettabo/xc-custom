@@ -1,0 +1,8 @@
+---
+# homeshick
+
+- name: clone dotfiles
+  command: ~/.homesick/repos/homeshick/bin/homeshick clone {{ repo }} creates=~/.homesick/repos/dotfiles
+
+- name: symlink dotfiles
+  command: ~/.homesick/repos/homeshick/bin/homeshick -f link dotfiles creates=~/.vimrc
