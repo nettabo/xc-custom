@@ -7,52 +7,32 @@
     disabled: YES
 
   # fonts
-  #- role: cask_package
-  #  tap: caskroom/fonts
-  #  package_name: font-source-code-pro
-  #- role: cask_package
-  #  tap: caskroom/fonts
-  #  package_name: font-sauce-code-powerline
+  - role: cask_package
+    tap: caskroom/fonts
+    packages:
+      - font-source-code-pro
+      - font-sauce-code-powerline
 
   # cli
-  # shell tooling
   - role: oh_my_zsh
   - role: homeshick
     repo: git@bitbucket.org:nettabo/dotfiles.git
+
+  # Homebrew
   - role: brew_package
-    package_name: wget
-  - role: brew_package
-    package_name: tig
+    packages:
+      - wget
+      - git
+      - tig
   - role: brew_package
     tap: peco/peco
     package_name: peco
-  ## languages
-  #- role: git_package
-  #  repo: riywo/anyenv
-  #- role: npm_package
-  #  package_name: grunt
-  #- role: npm_package
-  #  package_name: bower
-  ## databases
-  #- role: brew_package
-  #  package_name: mongodb
-  ## deployment
-  #- role: brew_package
-  #  package_name: heroku-toolbelt
-  # - role: brew_package
-  #   package_name: ansible # Hey ! Already there !
 
-  # gui
-  ## text editors
+  # Homebrew Cask
   - role: cask_package
-    package_name: atom
-  ## terminals
-  - role: cask_package
-    package_name: iterm2
-  ## keyboards
-  - role: cask_package
-    package_name: karabiner
-  ## storages
-  - role: cask_package
-    package_name: dropbox
+    packages:
+      - atom
+      - iterm2
+      - karabiner
+      - dropbox
 
