@@ -28,6 +28,9 @@
   - role: brew_package
     tap: peco/peco
     package_name: peco
+  - role: brew_package
+    tap: motemen/ghq
+    package_name: ghq
 
   # Homebrew Cask
   - role: cask_package
