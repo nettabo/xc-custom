@@ -24,6 +24,7 @@
       - wget
       - git
       - tig
+      - go
   - role: brew_package
     tap: peco/peco
     package_name: peco
