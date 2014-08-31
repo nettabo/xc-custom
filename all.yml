@@ -17,6 +17,7 @@
   - role: oh_my_zsh
   - role: homeshick
     repo: git@bitbucket.org:nettabo/dotfiles.git
+  - role: neobundle
 
   # Homebrew
   - role: brew_package

@@ -1,0 +1,8 @@
+---
+# NeoBundle
+
+- name: run install.sh
+  shell: curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.sh | sh creates=~/.vim/bundle
+
+- name: install configured bundles
+  command: ~/.vim/bundle/neobundle.vim/bin/neoinstall creates=~/.vim/bundle/vim-getafe
