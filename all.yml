@@ -13,6 +13,11 @@
       - font-source-code-pro
       - font-sauce-code-powerline
 
+  # themes
+  - role: git_package
+    remote_repo: github.com/larssmit/iterm2-getafe
+    local_repo: ~/src/github.com/larssmit/iterm2-getafe
+
   # cli
   - role: oh_my_zsh
   - role: homeshick
