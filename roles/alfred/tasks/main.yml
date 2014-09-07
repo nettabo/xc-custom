@@ -1,0 +1,11 @@
+---
+# enable alfred link
+
+- name: reports whether Alfred is linked
+  command: brew cask alfred status
+  register: alfred_status
+  changed_when: alfred_status.rc != 0
+
+- name: adds Caskroom to alfred search paths
+  command: brew cask alfred link
+  when: "'not linked' in alfred_status.stdout"

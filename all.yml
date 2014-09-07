@@ -24,6 +24,9 @@
     repo: git@bitbucket.org:nettabo/dotfiles.git
   - role: neobundle
 
+  # gui
+  - role: alfred
+
   # Homebrew
   - role: brew_package
     packages:
